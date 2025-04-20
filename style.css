@@ -1,0 +1,384 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: wheat;
+
+}
+
+.conatiner {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* navigation */
+.nav {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    gap: 10px;
+    align-content: end;
+    padding-left: 74%;
+    padding-top: 2%;
+}
+
+.nav a {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 400;
+    color: black;
+    transition: 0.2s;
+}
+
+.nav a:hover {
+    transform: scale(1.1);
+}
+
+
+/* main Body */
+.mainBody {
+    width: 90%;
+    height: 865px;
+    margin: auto;
+    transition: 0.2s;
+}
+
+.mainBody:hover {
+    transform: scale(1.07);
+}
+
+.mainBodyHead {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-weight: lighter;
+    color: black;
+    margin-top: 50px;
+    text-decoration: 4px underline gold;
+}
+
+.projectBox {
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 350px;
+    width: 600px;
+    gap: 4px;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    transition: all 0.3s ease;
+}
+
+.projectBox img {
+    width: 100%;
+    height: 98%;
+    border-radius: 10px;
+}
+
+#amazonTxt {
+    width: 500px;
+    margin-top: -80px;
+    margin-left: 40px;
+    color: white;
+    font-size: 16px;
+    font-weight: 900;
+    text-shadow: 6px 6px 9px grey;
+    -webkit-text-stroke: 0.6px black;
+    display: none;
+    z-index: 1;
+    transition: all 0.5s ease;
+}
+
+#cricHeroTxt {
+    width: 500px;
+    margin-top: -90px;
+    margin-left: 40px;
+    color: white;
+    font-size: 16px;
+    font-weight: 900;
+    -webkit-text-stroke: 0.4px black;
+    text-shadow: 3px 3px 5px black;
+    display: none;
+    z-index: 1;
+    transition: all 0.5s ease;
+}
+
+.projectBox:hover #amazonTxt,
+.projectBox:hover #cricHeroTxt {
+    display: block;
+}
+
+.projectBox:hover {
+    background-color: #f1f1f1;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.card {
+    background-color: rgb(251, 217, 152);
+}
+
+.star {
+    color: rgb(233, 198, 3);
+    font-weight: bolder;
+    text-align: end;
+}
+
+.testimonialsImg {
+    height: 260px !important;
+}
+
+/* about */
+
+.about {
+    margin-top: 5px;
+    width: 90%;
+    margin: auto;
+    height: 230px;
+    /* border: 1px solid black; */
+    display: flex;
+    /* position: absolute; */
+    transition: 0.2s;
+}
+
+.about:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.aboutInfo {
+    width: 55%;
+    height: 100%;
+    padding: 20px;
+    margin-top: 5px;
+    /* border: 1px solid yellow; */
+    font-family: sans-serif;
+    margin: auto;
+    display: flex;
+    text-align: center;
+}
+
+.aboutInfo p {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.aboutInfo span {
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: 4px underline gold;
+    color: black;
+}
+
+/* divider */
+.divider {
+    width: 100%;
+    height: 4px !important;
+    /* background-color: red; */
+    background: linear-gradient(to right, yellow, orange, red);
+    /* position: absolute; */
+}
+
+/* skills */
+.skills {
+    width: 90%;
+    height: 200px;
+    margin: auto;
+    transition: 0.2s;
+}
+
+.skills:hover {
+    transform: scale(1.1);
+}
+
+.skills h3 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: 4px underline gold;
+    color: black;
+    margin-top: 20px;
+}
+
+.skillBox {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    gap: 20px;
+    /* background-color: aquamarine;     */
+    /* color: blueviolet; */
+    /* position: relative; */
+}
+
+.skill {
+    margin: 20px auto;
+    transition: 0.2s;
+}
+
+.skill img {
+    height: 70px;
+    width: 70px;
+    transition: 0.2s;
+}
+
+.skill p {
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+    text-align: center;
+    transition: 0.2s;
+}
+
+.skill img:hover,
+.skill p:hover {
+    transform: scale(1.1);
+}
+
+/* footer links */
+.footer {
+    height: 150px;
+    width: 100%;
+    position: relative;
+    background-color: wheat;
+}
+
+.footer img {
+    position: absolute;
+}
+
+.footer img:nth-child(2) {
+    z-index: 10;
+    margin-top: 47px;
+}
+
+.footer img:nth-child(1) {
+    top: -8%;
+    margin-top: 47px;
+}
+.footer p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 17px;
+    font-weight: 400;
+    margin-top: 170px;
+    z-index: 10;
+    color: black;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.footer1 {
+    width: 30%;
+    height: 70px;
+    margin: auto;
+    display: flex;
+    justify-content:space-evenly;
+    position: relative;
+    top: 280px;
+    z-index: 10;
+    gap: 20px;
+}
+
+.footer1 i{
+    font-size: 40px;
+    transition: 0.2s;
+}
+.footer1 i:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+/* myInfo */
+.myInfo {
+    width: 90%;
+    height: 200px;
+    margin: auto;
+    /* margin-top: 10px; */
+    display: flex;
+    transition: 0.2s;
+}
+
+.myInfo:hover {
+    transform: scale(1.1);
+}
+
+
+/*text effets*/
+.myInfo {
+    position: relative;
+    /* margin-left: 10%; */
+    top: 40px;
+}
+
+.myInfoTxt {
+    width: 70%;
+}
+
+.myInfoTxt h3 {
+    font-size: 35px;
+    font-weight: 800;
+}
+
+.myInfoTxt p {
+    font-size: 40px;
+    font-weight: 800;
+}
+
+#txtEffect {
+    font-size: 40px;
+    font-weight: 800;
+    font-family: 'Courier New', Courier, monospace;
+    color: green;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    animation: blink 0.7s step-end infinite;
+    margin-top: 4px;
+    margin-left: 7px;
+    position: absolute;
+}
+
+@keyframes blink {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: black;
+    }
+}
+
+/*image*/
+.myImg {
+    position: relative;
+    left: 15%;
+    bottom: 18px;
+}
+
+.myImg img {
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.myImg img:hover {
+    transform: scale(1.1);
+    box-shadow: 3px 3px 15px grey;
+}
